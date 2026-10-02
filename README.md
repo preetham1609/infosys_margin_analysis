@@ -281,7 +281,7 @@ Aspiring Data Analyst
 **Skills**
 - Python
 - SQL
-- Power BI (PL-300 certified)
+- Power BI (PL-300)
 - Excel
 - Pandas
 - NumPy
