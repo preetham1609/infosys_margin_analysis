@@ -217,10 +217,15 @@ infosys-margin-analysis/
 │   ├── visualize.py
 │   └── sector_comparison.py
 │
+├── notebooks/
+│   └── infosys_margin_analysis.ipynb
+│
 ├── Outputs/
 │   ├── chart1_sales_vs_margin.png
 │   ├── chart2_cost_driver.png
-│   └── chart3_cost_structure.png
+│   ├── chart3_cost_structure.png
+│   └── chart4_sector_opm_comparison.png
+│
 │
 ├── Dashboard/
 │   └── Infosys_Margin_Dashboard.pbix
@@ -237,14 +242,15 @@ infosys-margin-analysis/
 
 ## 🚀 How to Run
 
-1. Clone the repository
-2. Install the required Python libraries: `pip install pandas openpyxl matplotlib`
-3. Ensure `Infosys.xlsx`, `TCS.xlsx`, and `Wipro.xlsx` are in the project folder (exported from Screener.in → Profit & Loss tab → Export to Excel)
-4. Run `extract_data.py` to clean the Infosys data and generate `infosys_annual_clean.csv`
-5. Run `quantify_driver.py` to quantify the contribution of each cost category to the OPM change
-6. Run `Scripts/visualize.py` to generate the three diagnostic charts
-7. Run `Scripts/sector_comparison.py` to generate the peer benchmark dataset
-8. Open `Dashboard/Infosys_Margin_Dashboard.pbix` in Power BI Desktop to explore the interactive dashboard
+1. Clone the repository.
+2. Install the required Python libraries: `pip install -r requirements.txt`
+3. Ensure `Infosys.xlsx`, `TCS.xlsx`, and `Wipro.xlsx` are available in the `Data/` folder.
+4. Run `Scripts/extract_data.py` to clean the Infosys data and generate `infosys_annual_clean.csv`.
+5. Run `Scripts/quantify_driver.py` to quantify the contribution of each cost category to the OPM change.
+6. Run `Scripts/visualize.py` to generate the three diagnostic charts.
+7. Run `Scripts/sector_comparison.py` to generate the peer benchmark dataset and sector comparison chart.
+8. Open `notebooks/infosys_margin_analysis.ipynb` in Jupyter Notebook or VS Code to explore the analysis, calculations, visualizations, and key findings.
+9. Open `Dashboard/Infosys.pbix` in Power BI Desktop to explore the interactive dashboard.
 ---
 
 ## ⚠️ Limitations
