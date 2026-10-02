@@ -92,6 +92,7 @@ This project asks a specific, falsifiable business question:
 
 **Data used:** Consolidated annual Profit & Loss statements, including Sales, Employee Cost, Other Manufacturing Expenses, Selling & Administration expenses, Other Expenses, Power & Fuel, and Net Profit.
 
+**Note:** Other Manufacturing Expenses is Screener.in's label for this category. For an IT services company, it is a broad aggregate of operating costs.
 ---
 
 ## 🛠 Tools & Technologies
@@ -187,13 +188,12 @@ The comparison shows:
 - Wipro experienced a 5.15 percentage-point decline.
 - The peer comparison provides context for Infosys' margin movement, while the detailed cost-driver decomposition is performed only for Infosys.
 
-
+Conclusion: All three companies saw margins fall from FY21 to FY26, so the pressure looks sector-wide. Infosys declined more than TCS (−1.23 pp) but less than Wipro (−5.15 pp).
 ---
 
 ## ✅ Recommendations
 
-1. **Investigate Other Manufacturing Expenses:** Other Manufacturing Expenses increased by 5.69 percentage points of Sales from FY21 to FY26 and was the largest negative contributor to the OPM decline. Management should break down this aggregated category internally to identify the specific sources of cost escalation.
-2. **Improve cost efficiency:** Review the underlying components of Other Manufacturing Expenses and identify opportunities for cost optimization without affecting service quality.
+1. **Investigate Other Manufacturing Expenses:** It roses 5.69pp of sales and was the largest negative contributor. Management should split this, aggregate into its components and identify cost-optimization opportunities without affecting service quality.
 3. **Set cost-efficiency targets:** Establish annual targets for Other Manufacturing Expenses as a percentage of Sales and monitor the metric alongside revenue and OPM growth.
 4. **Protect the gains in employee-cost efficiency:** Employee Cost declined from 55.29% of Sales in FY21 to 53.24% in FY26, partially offsetting the margin pressure. Maintaining this efficiency while supporting business growth can help protect operating margins.
 
@@ -250,7 +250,7 @@ infosys-margin-analysis/
 6. Run `Scripts/visualize.py` to generate the three diagnostic charts.
 7. Run `Scripts/sector_comparison.py` to generate the peer benchmark dataset and sector comparison chart.
 8. Open `notebooks/infosys_margin_analysis.ipynb` in Jupyter Notebook or VS Code to explore the analysis, calculations, visualizations, and key findings.
-9. Open `Dashboard/Infosys.pbix` in Power BI Desktop to explore the interactive dashboard.
+9. Open `Dashboard/Infosys_Margin_Dashboard.pbix` in Power BI Desktop to explore the interactive dashboard.
 ---
 
 ## ⚠️ Limitations
